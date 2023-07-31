@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-xkim
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-nrpg-tenant/quarkus/devfile-sample-code-with-quarkus-xkim@sha256:609b57580f5a09996b3de9b141d5ff8c1abe9ba4d8e9c5bda77ab4ed2cee2e32
+        name: my-java-quarkus
+        resources: {}
+status: {}
